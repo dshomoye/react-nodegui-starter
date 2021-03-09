@@ -4,7 +4,20 @@ import { useNotes } from "../utils/notes";
 import NoteCard from "./NoteCard";
 
 const NotesContainer = () => {
-  const notes = useNotes();
+  // let notes = useNotes(); using this breaks
+  let notes = [
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+    {identifier: "dsad", title: "title", tags: [], creationDate: "dsads"},
+  ]
   return (
     <View style="height: '100%';">
       <Text id="welcome-text">Notes from this day 😌 {`<hr />`}</Text>

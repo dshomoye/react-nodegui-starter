@@ -16,7 +16,9 @@ class App extends React.Component {
         styleSheet={styleSheet}
         minSize={minSize}
       >
-        <NotesContainer />
+        <ScrollArea style="height: '100%';">
+          <NotesContainer />
+        </ScrollArea>
       </Window>
     );
   }
